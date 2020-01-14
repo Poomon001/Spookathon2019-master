@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Spooky Story</title>
+	<!--Boostrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<link href="mycss.css" rel="stylesheet" type="text/css">
+	<script src="cursor.js"></script>
+	<script type="text/javascript" src='mode.js'></script>
+
+</head>
+
+<body>
+	<div class="fixed-bottom">
+		<div>
+			<h6 style="color:rgb(133, 131, 131);">Created by</h6>
+		</div>
+		<div>
+			<h6 style="color:rgb(133, 131, 131);">Vicky Nguyen - Poomon Lo</h6>
+		</div>
+
+	</div>
+	<!--home-->
+	<div class="container" id="container1">
+		<h2 id="header1">start page</h2>
+		<button class="btn" id="button1" type="button" onclick="gameStart(1)">start</button>
+	</div>
+	<!--name-->
+	<div class="container" id="container2">
+		<h2 id="header1">Please enter Your Name</h2>
+
+		<input type="text" id="name" name="fname" value="name"><br>
+		<button class="btn" id="submitButton" type="submit" onclick="gameStart(2)">submit</button>
+
+	</div>
+	<!--game-->
+	<div class="container" id="container3">
+
+		<div class="story" id="path1">
+			So <span id="player"></span>, What do you do when you hear a strange noise?
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(3)">Walk toward the strange sound</button>
+			<button class="btn btn-purple" id="button4" type="button" onclick="gameStart(12)">Ignore and walk home
+			</button>
+		</div>
+	</div>
+
+
+	<div class="container" id="container4">
+		<div class="story">
+			You turn around and you get shocked because?
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(4)">you see your friend</button>
+			<button class="btn btn-purple" id="button4" type="button" onclick="gameStart(8)"> you see a piece of paper
+			</button>
+		</div>
+	</div>
+
+	<div class="container" id="container5">
+		<div class="story">
+			A friend invite you to hang out, will you go?
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(5)">Let go, why not</button>
+			<button class="btn btn-purple" id="button4" type="button" onclick="gameStart(7)">Nah, I am so tired just go
+				home</button>
+			<!--return-->
+		</div>
+	</div>
+
+	<div class="container" id="container6">
+		<div class="story">
+			When you arrive at your friend house, you?
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(6)">Ask him to play a video game</button>
+			<button class="btn btn-purple" id="button4" type="button" onclick="gameStart(13)">Go to the
+				restroom</button>
+			<!--return-->
+		</div>
+	</div>
+
+	<div class="container" id="container7">
+		<!-- <div class="story">
+			You have a nice time playing a ghost game with your friend until midnight then you excuse and you back to
+			your home. Tomorrow you receive a security email from uvic warning every student to be careful as there is a
+			student who is your friend you were hanging out with until very late at night got hit by a car and being
+			sent to the hospital last evening.
+		</div> -->
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(17)">Click me</button>
+			<!-- <button class="btn" id="button3" type="button">Click
+				me</button> -->
+		</div>
+	</div>
+
+	<div class="container" id="container8">
+		<div class="story">
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(17)">Click me</button>
+		</div>
+	</div>
+
+	<div class="container" id="container9">
+		<div class="story">
+			You take it from the ground and you see?
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(9)">???</button>
+		</div>
+	</div>
+
+	<div class="container" id="container10">
+		<div class="story">
+			What is your favorite course?
+		</div>
+		<div>
+			<input type="text" id="exam" name="fname" value="course name"><br>
+			<button class="btn" id="submitButton" type="submit" onclick="gameStart(10)">Next</button>
+		</div>
+	</div>
+
+	<div class="container" id="container11">
+		<div class="story">
+			You realize that it is your <span id="examName"></span> midterm paper accidentally dropped by you professor
+			when he rushed to Halloween party.
+		</div>
+		<div>
+			<button class="btn" id="submitButton" type="button" onclick="gameStart(11)">Next</button>
+		</div>
+	</div>
+
+	<div class="container" id="container12">
+		<!-- <div class="story">
+			You terrify and suddenly got up from a dream.
+		</div> -->
+		<div>
+			<button class="btn" id="submitButton" type="button" onclick="gameStart(17)">Click me</a></button>
+		</div>
+	</div>
+
+	<div class="container" id="container13">
+		<div class="story">
+			The sound gets louder and gets closer to you. You suddenly turns back and takes a quick glance at the
+			sound.
+
+		</div>
+		<div>
+			<button class="btn" id="submitButton" type="button" onclick="gameStart(3)">Next</button>
+		</div>
+	</div>
+
+	<div class="container" id="container14">
+		<div class="story">
+			While washing your hand,the light suddenly turns off. You then?
+
+		</div>
+		<div>
+			<button class="btn" id="button3" type="button" onclick="gameStart(14)">Use the flashlight from your
+				phone</button>
+			<button class="btn btn-purple" id="button4" type="button" onclick="gameStart(16)">Walk out to ask your
+				friend</button>
+		</div>
+	</div>
+
+	<div class="container" id="container15">
+		<div class="story">
+			You saw something like a shadow of man in the bathroom mirror. You immediately ran away from your friend’s
+			house without saying any words to your friend.
+
+		</div>
+		<div>
+			<button class="btn" id="submitButton" type="button" onclick="gameStart(15)">Next</button>
+		</div>
+	</div>
+
+	<div class="container" id="container16">
+		<!-- <div class="story">
+			Tomorrow you receive a security email from uvic warning every student to be careful as there is a student
+			who is your friend that you were hanging out with until very late at night got hit by a car and being sent
+			to the hospital last evening.
+		</div> -->
+		<div>
+			<button class="btn" id="submitButton" type="button" onclick="gameStart(16)"></button>
+			<!-- <button class="btn" id="submitButton" type="button">Click me story</button> -->
+		</div>
+	</div>
+
+	<div class="container" id="container17">
+		<!-- <div class="story">
+			Your friend said he had no idea and suggest that we should go to an electric room. When you and your friend
+			arrived in that room the light mysteriously turned on and you realize that your friend disappears and you
+			are the only one in the house.
+		</div> -->
+		<div>
+			<button class="btn" id="submitButton" type="button" onclick="gameStart(17)">Click me</button>
+			<!-- <button class="btn" id="submitButton" type="button">Click me story</button> -->
+		</div>
+	</div>
+
+	<div class="container" id="container18">
+		<canvas id="canvas"></canvas>
+		<div style="height:100%;">
+			<marquee style="height:100vh; " direction="up" scrollamount="3"><span id="finalText"></span>
+			</marquee>
+		</div>
+
+		<div>
+			<p id="msg"></p>
+			<input type="hidden" name="speech-msg" id="speech-msg" x-webkit-speech value="">
+			<button type="button" class="btn btn-primary" id="speak" onclick="returnparagraph()">Speak</button>
+		</div>
+	</div>
+
+	<!-- TEXT TO SPEECH -->
+
+	<script src="text2speech_custom.js"></script>
+	<script src="smoke_background.js"></script>
+	<iframe class="embed-responsive-item" src="/macabre.mp3" style="display: none;"></iframe>
+
+</body>
+
+</html>

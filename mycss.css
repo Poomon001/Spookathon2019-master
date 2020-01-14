@@ -1,0 +1,169 @@
+/*credit
+- https://css-tricks.com/almanac/properties/a/animation/  //sourse code
+- http://pngimg.com/uploads/ghost/ghost_PNG81.png  //image
+*/
+body {
+    background: black;
+    display: flex;
+    overflow: hidden;
+  }
+
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container18,
+  #container17,
+  #container16,
+  #container15,
+  #container14,
+  #container13,
+  #container12,
+  #container11,
+  #container10,
+  #container9,
+  #container8,
+  #container7,
+  #container6,
+  #container5,
+  #container4,
+  #container3,
+  #container2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 25px 50px;
+    border: solid 2px #ffbdbd;
+    border-radius: 20px;
+    background: transparent;
+    color: #ffbdbd;
+    box-shadow: inset 0px 0px 30px 0px #ffbdbd;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 20em;
+  }
+  .btn:hover {
+    color: #f1cbff;
+    border: solid 2px #f1cbff;
+    box-shadow: inset 0px 0px 30px 0px #f1cbff;
+  }
+  
+  .btn-purple {
+    color: #c9c9ff;
+    border-color: #c9c9ff;
+    box-shadow: inset 0px 0px 30px 0px #c9c9ff;
+  }
+  .btn-purple:hover {
+    color: #e1f7d5;
+    border-color: #e1f7d5;
+    box-shadow: inset 0px 0px 30px 0px #e1f7d5;
+  }
+/*--header--*/
+#header1 {
+  position: absolute;
+  font-family: 'Arial';
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 0.75;
+  opacity: 0;
+  justify-content: center;
+  animation: light .5s ease-out alternate infinite;
+}
+
+@keyframes light{
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ligth {
+  to {
+    opacity: 0;
+  }
+}
+
+#name{
+  position: absolute;
+  top: 30%
+}
+#exam{
+  position: absolute;
+  top: 30%;
+}
+#submitButton{
+  position: relative;
+  top: 25em;
+}
+.story{
+  position: absolute;
+  font-size: 2em;
+  top: 10%;
+  color: white;
+}
+#button1{
+      position: relative;
+     top: 25em; ;
+}
+#button5{
+      position: relative;
+     top: 25em; 
+}
+
+#button3{
+  position: relative;
+  top: 25em;
+  right: 50%;
+}
+#button4{
+  position: relative;
+  top: 25em;
+  right: -50%;
+}
+.textPosition{
+  position: absolute;
+  top: 2em;
+  justify-content: center;
+  align-items: center;
+}
+/*css2*/
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+marquee{
+  margin: 0 20% 20% 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size:2em;
+  color: gray;
+  text-shadow: 0 0 1em gray;
+  pointer-events:none;
+}
+
+button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#music{
+ display: hidden;
+}
