@@ -13,6 +13,6 @@ Then the program will generate a spooky story based on those actions.
 | :---: | :---: | :---: | :---: | :---: |
 | | All pellets are collected | Collided with a ghost | Stop button | Start button |
 | Game Stop | | | Game Stop | Game Start |   
-| Game Start | Game Win | Game Lose | Game Start | Game Start |
+| Game Start | Game Win | Game Lose | Game Stop | Game Start |
 | Game Lose | | | Game Lose | Game Lose |
 | Game Win | | | Game Win | Game Win |
