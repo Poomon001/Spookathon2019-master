@@ -9,10 +9,10 @@ Then the program will generate a spooky story based on those actions.
 
 <br/>
 
-| States | Event 1 | Event 2 | Event 3 | Event 4 | Event 5 |
-| :---: | :---: | :---: | :---: | :---: | :---:
-| | All pellets are collected | Collided with a ghost | Stop button | Start button | Relaunch |
-| Game Stop | | | | | |      
-| Game Statr | | | | | |
-| Game Lose | | | | | |
-| Game Win | | | | | |
+| States | Event 1 | Event 2 | Event 3 | Event 4 |
+| :---: | :---: | :---: | :---: | :---: |
+| | All pellets are collected | Collided with a ghost | Stop button | Start button |
+| Game Stop | | | | Game Start |   
+| Game Start | Game Win | Game Lose | Game Start | Game Start |
+| Game Lose | | | Game Lose | Game Lose |
+| Game Win | | | Game Win | Game Win |
