@@ -9,7 +9,7 @@ Then the program will generate a spooky story based on those actions.
 
 <br/>
 
-| States | | | | | |
+| States | Event |
 | :---: | :---: | :---: | :---: | :---: | :---:
 | | All pellets are collected | Collided with a ghost | Stop button | Start button | Relaunch |
 | Game Stop | | | | | |      
