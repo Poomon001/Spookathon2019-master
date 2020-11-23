@@ -7,11 +7,6 @@ User will be given several situations, and they have to choose some actions.
 <br/>
 Then the program will generate a spooky story based on those actions.
 
-
-| Attempt | #1 | | |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 | |
-
 <br/>
 
 | States | | | | | |
