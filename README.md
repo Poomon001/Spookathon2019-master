@@ -10,7 +10,7 @@ Then the program will generate a spooky story based on those actions.
 
 | Attempt | #1 | |
 | :---: | :---: | :---: |
-| Seconds | 301 | 283 |
+| Seconds | 301 | 283 | |
 
 <br/>
 
