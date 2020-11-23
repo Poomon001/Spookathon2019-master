@@ -8,13 +8,13 @@ User will be given several situations, and they have to choose some actions.
 Then the program will generate a spooky story based on those actions.
 
 
-| Attempt | #1 | |
+| Attempt | #1 | | |
 | :---: | :---: | :---: |
 | Seconds | 301 | 283 | |
 
 <br/>
 
-| States | |
+| States | | | | | |
 | :---: | :---: | :---: | :---: | :---: | :---:
 | | All pellets are collected | Collided with a ghost | Stop button | Start button | Relaunch |
 | Game Stop | | | | | |      
